@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Biển Đông",
+    "slug": "bien-dong",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "biendong",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#18243a",
+    "ios": {
+      "bundleIdentifier": "app.biendong.mobile",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "app.biendong.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#0a1222",
+        "foregroundImage": "./assets/images/adaptive-icon.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0a1222",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 96
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true,
+      "tsconfigPaths": false
+    }
+  }
+}

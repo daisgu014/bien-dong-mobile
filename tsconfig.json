@@ -1,0 +1,14 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "~/*": ["./src/*"],
+      "@/modules/*": ["./src/core/modules/*/core.ts"],
+      "@/shared/*": ["./src/core/shared/*"]
+    },
+    "types": ["geojson"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+}
